@@ -37,6 +37,7 @@ body p{
     color: var(--pra-color);
     font-weight: var(--fore);
     line-height: 25px;
+    margin: 20px 0;
 }
 
 .btn{
@@ -55,7 +56,6 @@ body p{
 /* Heading style start here  */
 header{
     margin-bottom: 10%;
-    height: 100vh;
 }
 nav{
     display: flex;
@@ -156,7 +156,36 @@ nav ul li a:hover{
 
 }
 
-
+/* Multi place container style start here */
+.multi__place__container{
+    margin-bottom: 10%;
+}
+.multi__place__content{
+    width: 100%;
+    text-align: center;
+}
+.place1{
+    display: flex;
+    gap: 20px;
+}
+.place1 div > img{
+    width: 100%;
+}
+.place2{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.place2 div > img{
+    width: 100%;
+}
+.place3{
+    display: flex;
+    gap: 20px;
+}
+.place3 div > img{
+    width: 100%;
+}
 
 
 /* Responsive design start here */
@@ -184,7 +213,6 @@ nav ul li a:hover{
         display: none;
     }
     .banar__content{
-        height: 70vh;
         padding: 50px 0;
     }
     .banar__content h2{
@@ -211,5 +239,19 @@ nav ul li a:hover{
     .popular__img img{
         width: 100%;
     }
+
+    .place1, .place2, .place3{
+        flex-direction: column;
+    }
+
+    .place2 div > img{
+        height: 180px;
+    }
+    .place3 div > img{
+        height: 180px;
+    }
+    
+
+
 
 }
