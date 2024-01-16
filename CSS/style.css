@@ -242,6 +242,45 @@ nav ul li a:hover{
     border: 1px solid rgba(41, 206, 246, 0.20);
 }
 
+/* Our packages style  */
+.packages__container{
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.packages__container h1{
+    margin-bottom: 50px;
+}
+
+.packages__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.packages__card{
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.packages__card img{
+    width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    transition: 0.5s;
+}
+
+.packages__card img:hover{
+    transform: scale(1.1);
+}
+
+.card__tittel{
+    padding: 20px 30px;
+}
+
+
+
 /* Info cotainer section style  */
 .info__container{
     margin-bottom: 10%;
@@ -417,27 +456,28 @@ footer .footer{
 
     /* Main section style start here  */
     /* Popular container start  */
-    .popular__content{
+    .popular__content,
+    .place1, .place2, .place3{
         flex-direction: column;
     }
     .popular__img img{
         width: 100%;
     }
 
-    .place1, .place2, .place3{
-        flex-direction: column;
-    }
-
     .place2 div > img{
         height: 180px;
     }
+
     .place3 div > img{
         height: 180px;
     }
 
 
     /* Choose section style  */
-    .choose__card .top__item{
+
+    .choose__card .top__item,
+    .info__content, .place__content,
+    .packages__content{
         grid-template-columns: 1fr;
     }
 
@@ -445,11 +485,7 @@ footer .footer{
         width: 100%;
         margin-top: 30px;
     }
-    
-    /* Info content  */
-    .info__content, .place__content{
-        grid-template-columns: 1fr;
-    }
+
 
     /* Footer section  */
     footer{
@@ -533,15 +569,18 @@ footer .footer{
         height: 300px;
     }
 
-    /* Choose section style  */
-    .choose__card, .place__content{
+    .choose__card .top__item,
+    .info__content, .place__content{
         grid-template-columns: 1fr;
     }
     
-    /* Info content  */
-    .info__content{
-        grid-template-columns: 1fr;
+    .choose__card .bottom__item{
+        width: 100%;
+        margin-top: 30px;
     }
-    
+
+    .packages__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
