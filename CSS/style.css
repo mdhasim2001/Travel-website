@@ -188,6 +188,36 @@ nav ul li a:hover{
 }
 
 
+/* Choose section style here  */
+.choose__container{
+    margin-bottom: 10%;
+}
+.choose__content{
+    width: 100%;
+    text-align: center;
+}
+
+.choose__card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr; */
+    gap: 30px;
+}
+.choose__card .card__body{
+    padding: 30px;
+    background: var(--br-color-1);
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20)
+}
+
+.choose__card .secend{
+    background: var(--br-color-2);
+    border: 1px solid rgba(41, 206, 246, 0.20);
+}
+
+
+
+
 /* Responsive design start here */
 /* Mobail design  */
 @media screen and (max-width: 600px) {
@@ -252,6 +282,12 @@ nav ul li a:hover{
     }
     .place3 div > img{
         height: 180px;
+    }
+
+
+    /* Choose section style  */
+    .choose__card{
+        grid-template-columns: 1fr;
     }
     
 
