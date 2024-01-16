@@ -242,6 +242,11 @@ nav ul li a:hover{
     border: 1px solid rgba(41, 206, 246, 0.20);
 }
 
+.choose__card img{
+    width: 50px;
+    height: 50px;
+}
+
 /* Our packages style  */
 .packages__container{
     margin-bottom: 10%;
@@ -278,6 +283,56 @@ nav ul li a:hover{
 .card__tittel{
     padding: 20px 30px;
 }
+
+
+/* Discount section style  */
+.discount__container{
+    margin-bottom: 10%;
+
+}
+
+.discount__content{
+    background-image: url(../images/group3.png);
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+}
+
+.discount__secend__content{
+    background-image: url(../images/group4.png);
+}
+
+.discount__card{
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.discount__card span{
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: var(--fore);
+    color: var(--pra-color);
+}
+
+.discount__card span i{
+    margin-right: 5px;
+}
+
+.discount__card h3{
+    margin: 20px 0;
+}
+
+.discount__card h5{
+    color: var(--praimary-color);
+    margin-bottom: 20px;
+}
+
 
 
 
@@ -455,7 +510,6 @@ footer .footer{
     }
 
     /* Main section style start here  */
-    /* Popular container start  */
     .popular__content,
     .place1, .place2, .place3{
         flex-direction: column;
@@ -477,13 +531,26 @@ footer .footer{
 
     .choose__card .top__item,
     .info__content, .place__content,
-    .packages__content{
+    .packages__content,
+    .discount__content{
         grid-template-columns: 1fr;
     }
 
     .choose__card .bottom__item{
         width: 100%;
         margin-top: 30px;
+    }
+
+    .discount__content{
+        padding: 200px 30px 20px ;
+    }
+
+    .discount__card{
+        padding: 10px;
+    }
+
+    .discount__card p{
+        font-size: 14px;
     }
 
 
@@ -550,7 +617,6 @@ footer .footer{
     }
 
      /* Main section style start here  */
-    /* Popular container start  */
     .popular__content{
         flex-direction: column;
     }
@@ -583,4 +649,11 @@ footer .footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .discount__content{
+        padding: 30px;
+    }
+
+    .discount__card{
+        padding: 20px;
+    }
 }
