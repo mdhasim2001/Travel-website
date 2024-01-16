@@ -215,6 +215,82 @@ nav ul li a:hover{
     border: 1px solid rgba(41, 206, 246, 0.20);
 }
 
+/* Info cotainer section style  */
+.info__container{
+    margin-bottom: 10%;
+}
+
+.place__content{
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.place__tittel ul{
+    margin: 0 0 20px 30px;
+}
+
+.place__tittel ul li{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.place__content img{
+    width: 100%;
+}
+
+/* Info content style  */
+.info__content{
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 30px;
+}
+
+.informetion{
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.input__content{
+    padding-top: 20px;
+    border-top: 1px solid #FF5400;
+}
+
+input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    outline: none;
+}
+
+.input__content button{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.info__img{
+    position: relative;
+}
+
+.info__img img{
+    width: 100%;
+    /* position: relative; */
+}
+
+.info__img button{
+    position: absolute;
+    padding: 20px 30px;
+    bottom: 5px;
+    right: -10px;
+    transform: rotate(-20deg);
+    transform-origin: bottom left;
+
+}
 
 
 
@@ -286,10 +362,14 @@ nav ul li a:hover{
 
 
     /* Choose section style  */
-    .choose__card{
+    .choose__card, .place__content{
         grid-template-columns: 1fr;
     }
     
+    /* Info content  */
+    .info__content{
+        grid-template-columns: 1fr;
+    }
 
 }
 
