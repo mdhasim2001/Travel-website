@@ -171,12 +171,14 @@ nav ul li a:hover{
 .multi__place{
     color: #fff;
 }
+
+.multi__place img{
+    width: 100%;
+}
+
 .place1{
     display: flex;
     gap: 20px;
-}
-.place1 div > img{
-    width: 100%;
 }
 
 .place2{
@@ -185,17 +187,9 @@ nav ul li a:hover{
     margin: 20px 0;
 }
 
-.place2 div > img{
-    width: 100%;
-}
-
 .place3{
     display: flex;
     gap: 20px;
-}
-
-.place3 div > img{
-    width: 100%;
 }
 
 .position{
