@@ -22,10 +22,10 @@
 
 }
 
-.container{
+/* .container{
     width: 80%;
     margin: 0 auto;
-}
+} */
 
 body h1{
     color: var(--heading-color);
@@ -55,13 +55,20 @@ body p{
 
 /* Heading style start here  */
 header{
+    width: 100%;
+    height: 100vh;
     margin-bottom: 10%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(../images/group2.png);
+    background-size: cover;
+    background-position: center;
 }
 nav{
+    width: 90%;
+    margin: 0 auto;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 20vh;
 }
 
 nav h1{
@@ -79,14 +86,21 @@ nav h1 img{
     margin-right: 10px;
 }
 
+nav ul{
+    display: flex;
+}
+
+nav ul .closeBtn{
+    display: none;
+}
+
 nav ul li{
-    display: inline;
     margin: 0 20px;
     list-style: none;
 }
 
 nav ul li a{
-    color: #424247;
+    color: #fff;
 }
 
 nav ul li .active{
@@ -97,13 +111,17 @@ nav ul li a:hover{
     color: var(--praimary-color);
 }
 
+.resBtn{
+    display: none;
+}
+
 .banar__content{
     width: 100%;
-    /* height: 75vh; */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(../images/group2.png);
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     border-radius: 10px;
 }
@@ -111,21 +129,18 @@ nav ul li a:hover{
 .banar__content h2{
     color: #fff;
     font-size: 4rem;
-    margin-bottom: 50px;
     letter-spacing: 2px;
 }
 
 .banar__content p{
     color: #fff;
-    max-width: 500px;
-    margin: 0 auto;
 }
 
 .selector{
     max-width: 70%;
-    margin: 50px auto 0;
+    margin: 25px auto;
     background: rgba(255, 255, 255, 0.30);
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -138,9 +153,16 @@ nav ul li a:hover{
     border-radius: 8px;
     border: 0;
     outline: none;
+    margin: 0 10px;
 }
 
 /* Main section style start here  */
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Popular container start  */
 .popular__content{
     display: flex;
@@ -460,10 +482,6 @@ footer .footer{
 /* Responsive design start here */
 /* Mobail design  */
 @media screen and (max-width: 600px) {
-    .container{
-        width: 100%;
-        padding: 0 20px;
-    }
     .container h1 {
         font-size: 22px;
     }
@@ -471,19 +489,40 @@ footer .footer{
         font-size: 14px;
         line-height: 20px;
     }
-    nav{
-        flex-direction: column;
-        height: 10vh;
-    }
-    nav h1{
-        margin: 20px 0;
-    }
     nav ul{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #5A5A5D;
+        height: 100vh;
+        width: 50%;
+        padding-top: 50px;
+        text-align: center;
     }
-    .banar__content{
-        padding: 50px 0;
+
+    nav .navBar{
+        display: block;
     }
+
+    nav ul li{
+        margin: 20px 0;
+    }
+
+    nav ul .closeBtn{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+    }
+
+    .resBtn{
+        display: block;
+        padding: 5px 10px;
+    }
+
     .banar__content h2{
         font-size: 1.5rem;
         margin-bottom: 10px;
@@ -504,6 +543,12 @@ footer .footer{
     }
 
     /* Main section style start here  */
+
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .popular__content,
     .place1, .place2, .place3{
         flex-direction: column;
@@ -571,10 +616,7 @@ footer .footer{
 
 /* Tablet design */
 @media screen and (min-width: 600px) and (max-width: 992px) {
-    .container{
-        width: 100%;
-        padding: 0 20px;
-    }
+
     .container h1{
         font-size: 22px;
     }
@@ -582,35 +624,66 @@ footer .footer{
         font-size: 14px;
         line-height: 20px;
     }
-    nav{
-        flex-direction: column;
-        margin-top: 50px;
+
+    header{
+        width: 100%;
+        height: 70vh;
     }
+
     nav ul{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #5A5A5D;
+        height: 100vh;
+        width: 50%;
+        padding-top: 50px;
+        text-align: center;
     }
-    .banar__content{
-        padding: 50px 0;
+
+    nav .navBar{
+        display: block;
     }
+
+    nav ul li{
+        margin: 20px 0;
+    }
+
+    nav ul .closeBtn{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+    }
+
+    .resBtn{
+        display: block;
+        padding: 5px 10px;
+    }
+
     .banar__content h2{
-        font-size: 1.5rem;
+        font-size: 4rem;
         margin-bottom: 10px;
 
     }
-    .selector{
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        margin-top: 30px;
-    }
+   
     .selector > input, select {
         width: 100%;
     }
-    .selector button{
+    .selector > button{
         width: 100%;
-    }
+    } */
 
      /* Main section style start here  */
+
+    main{
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .popular__content{
         flex-direction: column;
     }
