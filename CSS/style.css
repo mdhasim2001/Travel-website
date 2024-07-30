@@ -615,7 +615,7 @@ footer .footer{
 
 
 /* Tablet design */
-@media screen and (max-width: 992px) {
+@media screen and (mim-width: 600px) and (max-width: 992px) {
 
     .container h1{
         font-size: 22px;
